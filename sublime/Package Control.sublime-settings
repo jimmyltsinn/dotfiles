@@ -1,0 +1,25 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"1337 Color Scheme",
+		"All Autocomplete",
+		"ApplySyntax",
+		"Color Scheme - JustBeforeDawn",
+		"Colorsublime",
+		"CUDA C++",
+		"Git",
+		"GitGutter-Edge",
+		"LaTeXTools",
+		"One Dark Color Scheme",
+		"OpenCL",
+		"Package Control",
+		"PackageSync",
+		"Solarized Color Scheme",
+		"SyntaxManager",
+		"TodoReview"
+	]
+}

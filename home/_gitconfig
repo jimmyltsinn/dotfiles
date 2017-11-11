@@ -1,0 +1,48 @@
+[user]
+	name = Jimmy Sinn
+	email = jimmyltsinn@gmail.com
+[color]
+	ui = true
+[core]
+	excludesfile = /Users/jimmy/.gitignore_global
+	attributesfile = /Users/jimmy/.gitattributes
+	editor = vim
+	autocrlf = input
+	pager = diff-so-fancy | less --tabs=4 -RFX
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path =
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[merge]
+	tool = meld
+[alias]
+    st = status
+    co = checkout
+[push]
+	default = simple
+[pager]
+	diff = diff-so-fancy | less --tabs=4 -RFX
+	show = diff-so-fancy | less --tabs=4 -RFX
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
+[commit]
+	template = /Users/jimmy/.stCommitMsg
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+    [merge]
+        tool = unityyamlmerge
+[mergetool "unity"]
+    trustExitCode = false
+    cmd = '/Applications/Unity/Unity-5.4.1f1.app/Contents/Tools/UnityYAMLMerge' merge -p "$BASE" "$REMOTE" "$LOCAL" "$MERGED"
+[credential "https://www.github.com"]
+    username = jimmyltsinn
+[credential]
+	helper = osxkeychain

@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/Users/jimmy/Research/tiling/Visualizer'
+let g:netrw_dirhist_2='/Users/jimmy/Research/tiling/Core'
+let g:netrw_dirhist_3='/Users/jimmy/Research/tiling/Matching'
+let g:netrw_dirhist_4='/Users/jimmy/openshift/tutorial'
+let g:netrw_dirhist_5='/Users/jimmy/Dropbox/TA/CSCI4140/2015Spring/tutorial2_code'
+let g:netrw_dirhist_6='/Users/jimmy/Research/tiling/Visualizer'
+let g:netrw_dirhist_7='/Users/jimmy'

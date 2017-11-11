@@ -101,6 +101,9 @@ prompt_context() {
     elif [[ $host = *"ip-"* ]]; then
         prompt_segment yellow black
         name=$(wget -qO- http://instance-data/latest/meta-data/public-ipv4)
+    elif [[ $host = *"dti-"* ]]; then
+        prompt_segment yellow black
+        name="DTI-VPS"
     else
         prompt_segment white black
         name='%m'

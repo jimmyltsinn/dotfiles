@@ -42,7 +42,3 @@
 [mergetool "unity"]
     trustExitCode = false
     cmd = '/Applications/Unity/Unity-5.4.1f1.app/Contents/Tools/UnityYAMLMerge' merge -p "$BASE" "$REMOTE" "$LOCAL" "$MERGED"
-[credential "https://www.github.com"]
-    username = jimmyltsinn
-[credential]
-	helper = osxkeychain

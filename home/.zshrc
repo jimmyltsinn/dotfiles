@@ -8,7 +8,9 @@ set convert-meta off
 #### Zsh / Oh-my-zsh setting
 export ZSH=$HOME/.oh-my-zsh
 
-ZSH_CUSTOM=${HOME}/Dropbox/sync-setting/omz-custom
+settingpath="$(dirname "$(readlink -f "${(%):-%N}")")/.."
+
+ZSH_CUSTOM="${settingpath}/omz-custom"
 ZSH_THEME="agnoster"
 
 # DISABLE_AUTO_UPDATE="true"

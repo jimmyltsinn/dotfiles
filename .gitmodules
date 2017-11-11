@@ -1,26 +1,26 @@
-[submodule "home/_vim/bundle/nerdtree"]
-	path = home/_vim/bundle/nerdtree
+[submodule "home/.vim/bundle/nerdtree"]
+	path = home/.vim/bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
-[submodule "home/_vim/bundle/ultisnips"]
-	path = home/_vim/bundle/ultisnips
+[submodule "home/.vim/bundle/ultisnips"]
+	path = home/.vim/bundle/ultisnips
 	url = https://github.com/SirVer/ultisnips.git
-[submodule "home/_vim/bundle/vim-colors-solarized"]
-	path = home/_vim/bundle/vim-colors-solarized
+[submodule "home/.vim/bundle/vim-colors-solarized"]
+	path = home/.vim/bundle/vim-colors-solarized
 	url = https://github.com/altercation/vim-colors-solarized.git
-[submodule "home/_vim/bundle/vim-smooth-scroll"]
-	path = home/_vim/bundle/vim-smooth-scroll
+[submodule "home/.vim/bundle/vim-smooth-scroll"]
+	path = home/.vim/bundle/vim-smooth-scroll
 	url = https://github.com/terryma/vim-smooth-scroll.git
-[submodule "home/_vim/bundle/syntastic"]
-	path = home/_vim/bundle/syntastic
+[submodule "home/.vim/bundle/syntastic"]
+	path = home/.vim/bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
-[submodule "home/_vim/bundle/vim-fugitive"]
-	path = home/_vim/bundle/vim-fugitive
+[submodule "home/.vim/bundle/vim-fugitive"]
+	path = home/.vim/bundle/vim-fugitive
 	url = https://www.github.com/tpope/vim-fugitive.git
-[submodule "home/_vim/bundle/vim-snippets"]
-	path = home/_vim/bundle/vim-snippets
+[submodule "home/.vim/bundle/vim-snippets"]
+	path = home/.vim/bundle/vim-snippets
 	url = https://github.com/honza/vim-snippets.git
-[submodule "home/_vim/bundle/vim-airline"]
-	path = home/_vim/bundle/vim-airline
+[submodule "home/.vim/bundle/vim-airline"]
+	path = home/.vim/bundle/vim-airline
 	url = https://www.github.com/jimmyltsinn/vim-airline.git
 	branch = jimmy-customize
 [submodule "omz-custom/plugins/zsh-syntax-highlighting"]

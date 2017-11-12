@@ -8,7 +8,20 @@ set convert-meta off
 #### Zsh / Oh-my-zsh setting
 export ZSH=$HOME/.oh-my-zsh
 
-settingpath="$(dirname "$(readlink -f "${(%):-%N}")")/.."
+## Ref: https://qiita.com/edvakf@github/items/b8400f7dfe9210aadddd
+function __readlink_f {
+    TARGET_FILE=$1
+
+    while [ "$TARGET_FILE" != "" ]; do
+        cd `dirname $TARGET_FILE`
+        FILENAME=`basename $TARGET_FILE`
+        TARGET_FILE=`readlink $FILENAME`
+    done
+
+    echo `pwd -P`/$FILENAME
+}
+
+settingpath="$(dirname "$(__readlink_f "${(%):-%N}")")/.."
 
 ZSH_CUSTOM="${settingpath}/omz-custom"
 ZSH_THEME="agnoster"

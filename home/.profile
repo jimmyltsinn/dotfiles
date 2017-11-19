@@ -34,3 +34,8 @@ export LS_COLORS='di=1;36:ln=35:so=32:pi=33:ex=31:bd=34;46:cd=34;43:su=30;41:sg=
 export LSCOLORS='Gxfxcxdxbxegedabagacad'
 
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home
+
+if command -v yarn > /dev/null 2>&1; then
+    export PATH="$PATH:`yarn global bin`";
+fi
+

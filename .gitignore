@@ -44,4 +44,12 @@ Temporary Items
 .apdisk
 
 # End of https://www.gitignore.io/api/macos,linux
+
+### Python ###
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+
 *.swp

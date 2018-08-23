@@ -56,3 +56,6 @@ source ${HOME}/.zsh/completion/aws_zsh_completer.sh
 [[ -f /Users/jimmy/.config/yarn/global/node_modules/tabtab/.completions/yarn.zsh ]] && . /Users/jimmy/.config/yarn/global/node_modules/tabtab/.completions/yarn.zsh
 
 autoload -Uz compinit && compinit -i
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+

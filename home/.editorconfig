@@ -24,6 +24,6 @@ indent_size = 4
 [*/Makefile]
 indent_style = tab
 
-[*.{json,html}]
+[*.{json,html,js,jsx,xml}]
 indent_size = 2
 

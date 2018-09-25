@@ -31,7 +31,7 @@ popd > /dev/null
 # popd > /dev/null
 
 # For sublime text
-slpath="${HOME}/Library/Application Support/Sublime Text 3/Packages/Package Syncing"
+slpath="${HOME}/Library/Application Support/Sublime Text 3/Packages"
 mkdir -p "${slpath}"
 rm -rf "${slpath}"
 ${CMD} ${PWD}/sublime "${slpath}"

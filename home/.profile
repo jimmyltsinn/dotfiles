@@ -1,4 +1,3 @@
-
 #### Set keyboard input setting
 set input-meta on
 set output-meta on
@@ -39,7 +38,7 @@ export PATH=/usr/local/bin:/usr/local/sbin:${PATH}
 export LS_COLORS='di=1;36:ln=35:so=32:pi=33:ex=31:bd=34;46:cd=34;43:su=30;41:sg=30;46:tw=30;42:ow=30;43'
 export LSCOLORS='Gxfxcxdxbxegedabagacad'
 
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home
+# export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -53,3 +52,6 @@ fi
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 alias uuidgen='uuidgen | tr "[:upper:]" "[:lower:]"'
+
+export GREP_COLOR='1;37;41'
+

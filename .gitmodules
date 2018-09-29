@@ -23,9 +23,6 @@
 	path = home/.vim/bundle/vim-airline
 	url = https://www.github.com/jimmyltsinn/vim-airline.git
 	branch = jimmy-customize
-[submodule "omz-custom/plugins/zsh-syntax-highlighting"]
-	path = omz-custom/plugins/zsh-syntax-highlighting
-	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
-[submodule "omz-custom/plugins/alias-tips"]
-	path = omz-custom/plugins/alias-tips
-	url = https://github.com/djui/alias-tips.git
+[submodule "home/.zprezto"]
+	path = home/.zprezto
+	url = https://github.com/sorin-ionescu/prezto.git

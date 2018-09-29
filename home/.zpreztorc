@@ -1,0 +1,137 @@
+zstyle ':prezto:*:*' case-sensitive 'no'
+zstyle ':prezto:*:*' color 'yes'
+
+# Ref: https://qiita.com/edvakf@github/items/b8400f7dfe9210aadddd
+function __readlink_f {
+    TARGET_FILE=$1
+
+    while [ "$TARGET_FILE" != "" ]; do
+        cd `dirname $TARGET_FILE`
+        FILENAME=`basename $TARGET_FILE`
+        TARGET_FILE=`readlink $FILENAME`
+    done
+
+    echo `pwd -P`/$FILENAME
+}
+
+settingspath="$(dirname "$(__readlink_f "${(%):-%N}")")/.."
+fpath=(
+    ${settingspath}/zsh-custom/themes
+    ${fpath}
+)
+
+# zstyle ':prezto:load' pmodule-dirs ${settingpath}/zprezto/modules
+
+zstyle ':prezto:load' zmodule 'attr' 'stat'
+zstyle ':prezto:load' zfunction 'zargs' 'zmv'
+
+# Set the Prezto modules to load (browse modules).
+# The order matters.
+zstyle ':prezto:load' pmodule \
+  'environment' \
+  'terminal' \
+  'editor' \
+  'history' \
+  'directory' \
+  'spectrum' \
+  'utility' \
+  'completion' \
+  'prompt' \
+  'syntax-highlighting'\
+  'history-substring-search' \
+  'git'
+
+# zstyle ':prezto:module:autosuggestions:color' found ''
+zstyle ':prezto:module:completion:*:hosts' etc-host-ignores \
+  '0.0.0.0' '127.0.0.1'
+
+zstyle ':prezto:module:editor' key-bindings 'emacs'
+zstyle ':prezto:module:editor' dot-expansion 'yes'
+
+zstyle ':prezto:module:osx:man' dash-keyword 'manpages'
+
+zstyle ':prezto:module:prompt' pwd-length 'full'
+zstyle ':prezto:module:prompt' show-return-val 'yes'
+
+zstyle ':prezto:module:python:virtualenv' auto-switch 'yes'
+zstyle ':prezto:module:python:virtualenv' initialize 'yes'
+
+zstyle ':prezto:module:ssh:load' identities 'id_rsa'
+
+zstyle ':prezto:module:prompt' theme 'powerlevel9k'
+
+zstyle ':prezto:module:syntax-highlighting' color 'yes'
+zstyle ':prezto:module:syntax-highlighting' highlighters \
+  'main' \
+  'brackets' \
+  'pattern' \
+  'line' \
+  'cursor' \
+  'root'
+zstyle ':prezto:module:syntax-highlighting' pattern \
+  'rm*-rf*' 'fg=white,bold,bg=red' \
+  'rm*-f*' 'fg=white,bg=red'
+
+zstyle ':prezto:module:history-substring-search:color' found ''
+zstyle ':prezto:module:history-substring-search:color' not-found ''
+zstyle ':prezto:module:history-substring-search' globbing-flags ''
+
+zstyle ':prezto:module:terminal' auto-title 'yes'
+zstyle ':prezto:module:terminal:window-title' format '%n@%m: %s'
+zstyle ':prezto:module:terminal:tab-title' format '%m: %s'
+zstyle ':prezto:module:terminal:multiplexer-title' format '%s'
+
+# zstyle ':prezto:module:tmux:auto-start' remote 'yes'
+zstyle ':prezto:module:tmux:iterm' integrate 'yes'
+
+zstyle ':prezto:module:utility' safe-ops 'no'
+
+POWERLEVEL9K_MODE='nerdfont-complete'
+
+POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
+
+POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX=""
+POWERLEVEL9K_MULTILINE_NEWLINE_PROMPT_PREFIX=""
+POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="%F{014}  \ue0b1 %f%k"
+
+POWERLEVEL9K_STATUS_OK=true
+POWERLEVEL9K_STATUS_VERBOSE=false
+POWERLEVEL9K_STATUS_OK_IN_NON_VERBOSE=true
+POWERLEVEL9K_STATUS_OK_BACKGROUND='black'
+POWERLEVEL9K_STATUS_OK_FOREGROUND='236'
+POWERLEVEL9K_STATUS_OK_VISUAL_IDENTIFIER_COLOR='green'
+POWERLEVEL9K_STATUS_ERROR_BACKGROUND='black'
+POWERLEVEL9K_STATUS_ERROR_FOREGROUND='236'
+POWERLEVEL9K_STATUS_ERROR_VISUAL_IDENTIFIER_COLOR='red'
+
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(custom_context dir vcs)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs time)
+
+POWERLEVEL9K_CUSTOM_CONTEXT="zsh_custom_context"
+POWERLEVEL9K_CUSTOM_CONTEXT_BACKGROUND="black"
+zsh_custom_context() {
+    local user="%n"
+    local host="$(hostname)"
+    local color='%F{white}'
+
+    [[ $host = "Jimmy-iMac" ]] && color='%F{192}'
+    [[ $host = "Jimmy-Pro" ]] && color='%F{014}'
+    [[ $host = "JA-MBP-181502" ]] && color='%F{013}'
+    [[ $host = *"ip-"* ]] && color='%F{227}'
+
+    echo -n "%{$color%}$user@$host"
+}
+
+POWERLEVEL9K_DIR_PATH_SEPARATOR="%F{025} \uE0B1 %F{black}"
+
+POWERLEVEL9K_SHOW_CHANGESET=true
+POWERLEVEL9K_VCS_OUTGOING_CHANGES_ICON='\uf062 '
+POWERLEVEL9K_VCS_INCOMING_CHANGES_ICON='\uf063 '
+
+POWERLEVEL9K_TIME_BACKGROUND="017"
+POWERLEVEL9K_TIME_FOREGROUND="111"
+
+POWERLEVEL9K_LEFT_SEGMENT_SEPARATOR='\uE0B4'
+POWERLEVEL9K_RIGHT_SEGMENT_SEPARATOR='\uE0B6'
+

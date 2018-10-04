@@ -35,14 +35,6 @@ set linebreak " No use when no wrap
 let g:airline_powerline_fonts = 1   " Set powerline font support for airline
 let g:airline#extensions#tabline#enabled = 1
 
-" UltiSnips
-" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
-" If you want :UltiSnipsEdit to split your window.
-let g:UltiSnipsEditSplit="vertical"
-
 let s:uname = system("echo -n \"$(uname)\"")
 if s:uname == "Darwin"
     " Do Mac stuff here

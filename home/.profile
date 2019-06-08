@@ -55,3 +55,6 @@ alias uuidgen='uuidgen | tr "[:upper:]" "[:lower:]"'
 
 export GREP_COLOR='1;37;41'
 
+
+# export PATH="$HOME/.fastlane/bin:$PATH"
+export PATH="/usr/local/opt/ruby/bin:$PATH"

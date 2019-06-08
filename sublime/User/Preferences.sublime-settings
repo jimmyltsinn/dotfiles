@@ -1,5 +1,9 @@
 {
-	"color_scheme": "Packages/Colorsublime - Themes/Smyck.tmTheme",
+	"color_scheme": "Monokai Pro.sublime-color-scheme",
 	"font_size": 18,
-	"theme": "Default.sublime-theme"
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"theme": "Monokai Pro.sublime-theme"
 }

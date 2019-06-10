@@ -5,8 +5,12 @@
 	],
 	"installed_packages":
 	[
+		"Babel",
 		"Colorsublime",
+		"JSX",
 		"Package Control",
+		"SublimeLinter",
+		"SublimeLinter-eslint",
 		"Theme - Monokai Pro"
 	]
 }

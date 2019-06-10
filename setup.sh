@@ -31,7 +31,7 @@ popd > /dev/null
 # popd > /dev/null
 
 # For sublime text
-slpath="${HOME}/Library/Application Support/Sublime Text 3/Packages"
+slpath="${HOME}/Library/Application Support/Sublime Text 3/Packages/User"
 mkdir -p "${slpath}"
 rm -rf "${slpath}"
 ${CMD} ${PWD}/sublime "${slpath}"

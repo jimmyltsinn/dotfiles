@@ -30,8 +30,9 @@ export CPPFLAGS=-fdiagnostics-color=always
 export CFLAGS=-fdiagnostics-color=always
 
 #-- Android setting
-ANDROID_SDK_PATH=${HOME}/Library/Android/sdk
-PATH=${PATH}:${ANDROID_SDK_PATH}/platform-tools
+export ANDROID_HOME=${HOME}/Library/Android/sdk
+export ANDROID_SDK_PATH=${HOME}/Library/Android/sdk
+export PATH=${PATH}:${ANDROID_SDK_PATH}/platform-tools
 
 export PATH=/usr/local/bin:/usr/local/sbin:${PATH}
 
@@ -58,3 +59,4 @@ export GREP_COLOR='1;37;41'
 
 # export PATH="$HOME/.fastlane/bin:$PATH"
 export PATH="/usr/local/opt/ruby/bin:$PATH"
+export EDITOR="code -w"

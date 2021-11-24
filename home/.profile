@@ -13,7 +13,7 @@ export MANPATH=${INFOPATH}:/usr/local/texlive/2014/texmf-dist/doc/man
 export PATH=${PATH}:/usr/local/texlive/2014/bin/x86_64-linux
 
 #-- Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
+export PATH="/usr/local/lib/ruby/gems/3.0.0/bin:/usr/local/heroku/bin:$PATH"
 
 #-- Automatic parallel make
 if [[ `uname` == "Linux" ]]; then

@@ -58,7 +58,7 @@ zstyle ':prezto:module:python:virtualenv' initialize 'yes'
 
 zstyle ':prezto:module:ssh:load' identities 'id_rsa'
 
-zstyle ':prezto:module:prompt' theme 'powerlevel9k'
+zstyle ':prezto:module:prompt' theme 'powerlevel10k'
 
 zstyle ':prezto:module:syntax-highlighting' color 'yes'
 zstyle ':prezto:module:syntax-highlighting' highlighters \
@@ -115,9 +115,9 @@ zsh_custom_context() {
     local host="$(hostname)"
     local color='%F{white}'
 
-    [[ $host = "Jimmy-iMac" ]] && color='%F{192}'
-    [[ $host = "Jimmy-Pro" ]] && color='%F{014}'
-    [[ $host = "JA-MBP-181502" ]] && color='%F{013}'
+    [[ $host = "Jimmy-Studio" ]] && color='%F{192}'
+    [[ $host = "Jimmy-Pro-Max" ]] && color='%F{014}'
+    [[ $host = "Jimmy-iMac" ]] && color='%F{013}'
     [[ $host = *"ip-"* ]] && color='%F{227}'
 
     echo -n "%{$color%}$user@$host"

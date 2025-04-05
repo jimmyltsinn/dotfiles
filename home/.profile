@@ -68,3 +68,6 @@ export PATH="$PATH:$HOME/.dotnet/tools"
 
 # Setting PATH for Python
 export PATH="/Library/Frameworks/Python.framework/Versions/Current/bin:${PATH}"
+
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"

@@ -69,8 +69,8 @@ zstyle ':prezto:module:syntax-highlighting' highlighters \
   'cursor' \
   'root'
 zstyle ':prezto:module:syntax-highlighting' pattern \
-  'rm*-rf*' 'fg=white,bold,bg=red' \
-  'rm*-f*' 'fg=white,bg=red'
+  'rm -rf *' 'fg=white,bold,bg=red' \
+  'rm -f *' 'fg=white,bg=red'
 
 zstyle ':prezto:module:history-substring-search:color' found ''
 zstyle ':prezto:module:history-substring-search:color' not-found ''

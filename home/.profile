@@ -62,3 +62,6 @@ export PATH="/usr/local/opt/ruby/bin:$PATH"
 export EDITOR="code -w"
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# Add .NET Core SDK tools
+export PATH="$PATH:$HOME/.dotnet/tools"

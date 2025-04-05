@@ -65,3 +65,6 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Add .NET Core SDK tools
 export PATH="$PATH:$HOME/.dotnet/tools"
+
+# Setting PATH for Python
+export PATH="/Library/Frameworks/Python.framework/Versions/Current/bin:${PATH}"
